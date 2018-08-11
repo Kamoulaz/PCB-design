@@ -318,30 +318,27 @@ wave soldering</description>
 <text x="-3.81" y="2.54" size="1.27" layer="21">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.27" layer="21">&gt;VALUE</text>
 </package>
-<package name="JACK_2.1MM">
-<wire x1="-4.445" y1="-7.493" x2="4.5466" y2="-7.493" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="-7.493" x2="-4.445" y2="7.3152" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="7.3152" x2="4.5466" y2="7.3152" width="0.127" layer="21"/>
-<wire x1="4.5466" y1="-7.493" x2="4.5466" y2="7.3152" width="0.127" layer="21"/>
-<wire x1="0" y1="-7.366" x2="0" y2="-2.54" width="0.6096" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="3.81" width="0.6096" layer="21"/>
-<wire x1="0" y1="3.81" x2="0" y2="4.826" width="0.6096" layer="21"/>
-<smd name="PIN" x="-5.6388" y="-2.413" dx="2.3876" dy="2.794" layer="1"/>
-<smd name="PIN1" x="-5.6388" y="3.683" dx="2.3876" dy="2.794" layer="1"/>
-<smd name="CONTACT" x="5.7658" y="-2.413" dx="2.3876" dy="2.794" layer="1"/>
-<smd name="SHUNT" x="5.7658" y="3.683" dx="2.3876" dy="2.794" layer="1"/>
-</package>
-<package name="JACK_.65MM">
-<wire x1="-2.4226" y1="6.0396" x2="2.5562" y2="6.0396" width="0.127" layer="21"/>
-<wire x1="2.5562" y1="6.0396" x2="2.5562" y2="-4.9705" width="0.127" layer="21"/>
-<wire x1="2.5562" y1="-4.9705" x2="-2.4226" y2="-4.9705" width="0.127" layer="21"/>
-<wire x1="-2.4226" y1="-4.9705" x2="-2.4226" y2="6.0395" width="0.127" layer="21"/>
-<wire x1="0.0339" y1="-4.9921" x2="0.0339" y2="3.3549" width="0.6096" layer="21"/>
-<smd name="SHUNT" x="-3.4504" y="5.0052" dx="2.032" dy="2.54" layer="1"/>
-<smd name="SHIELD" x="-3.4504" y="-1.4484" dx="2.032" dy="2.54" layer="1"/>
-<smd name="SHIELD1" x="3.5782" y="-0.4473" dx="2.032" dy="2.54" layer="1"/>
-<smd name="CONTACT" x="3.5781" y="4.0255" dx="2.032" dy="2.54" layer="1"/>
-<smd name="PIN" x="0.0639" y="7.0712" dx="1.778" dy="2.032" layer="1"/>
+<package name="PJ-002AH-SMT">
+<wire x1="-7.4" y1="4.4" x2="-7.4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="-4.5" x2="7.4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="7.4" y1="-4.5" x2="7.4" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.4" y1="4.5" x2="-7.4" y2="4.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="0.5" x2="-6.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="0.5" x2="-7" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-7" y1="0" x2="-6.5" y2="-0.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.5" y1="-0.5" x2="5.5" y2="-0.5" width="0.127" layer="21"/>
+<smd name="PIN1" x="3.7" y="6" dx="2.8" dy="2.4" layer="1" rot="R270"/>
+<smd name="SHUNT" x="3.7" y="-6" dx="2.8" dy="2.4" layer="1" rot="R270"/>
+<smd name="CONTACT" x="-2.4" y="-6" dx="2.8" dy="2.4" layer="1" rot="R270"/>
+<smd name="PIN2" x="-2.4" y="6" dx="2.8" dy="2.4" layer="1" rot="R270"/>
+<text x="-6" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="2.75" y1="4.75" x2="4.55" y2="6.25" layer="51" rot="R270"/>
+<rectangle x1="2.75" y1="-6.25" x2="4.55" y2="-4.75" layer="51" rot="R270"/>
+<rectangle x1="-3.25" y1="-6.25" x2="-1.45" y2="-4.75" layer="51" rot="R270"/>
+<rectangle x1="-3.35" y1="4.75" x2="-1.55" y2="6.25" layer="51" rot="R270"/>
+<hole x="-2.4" y="0" drill="1.6"/>
+<hole x="2.1" y="0" drill="1.8"/>
 </package>
 </packages>
 <symbols>
@@ -444,22 +441,30 @@ wave soldering</description>
 <pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
-<symbol name="JACK">
-<wire x1="-2.54" y1="3.81" x2="-2.54" y2="2.54" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-3.81" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="-3.81" x2="0" y2="-3.81" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="3.81" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="3.81" x2="-2.54" y2="3.81" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.81" x2="0" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="2.54" y1="-3.81" x2="0" y2="-3.81" width="0.3048" layer="94"/>
+<symbol name="DC-POWER-JACK">
+<wire x1="-2.54" y1="-3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="1.016" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="1.016" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="-1.27" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="4.9514" size="1.9304" layer="95">&gt;NAME</text>
-<pin name="PIN" x="-5.08" y="2.54" visible="off" length="short"/>
-<pin name="CONTACT" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="SHUNT" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<wire x1="2.54" y1="2.54" x2="1.5875" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="2.54" x2="1.5875" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.635" x2="1.27" y2="0.3175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.635" x2="1.905" y2="0.3175" width="0.254" layer="94"/>
+<pin name="PIN1" x="-5.08" y="2.54" visible="pad" length="short" direction="pwr"/>
+<pin name="SHUNT" x="5.08" y="2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="CONTACT" x="5.08" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="PIN2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -600,26 +605,20 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 </device>
 </devices>
 </deviceset>
-<deviceset name="JACK" prefix="J">
+<deviceset name="JACK-2.1MM" prefix="J">
+<description>SMD DC power jack PJ-002AH-SMT As found in the fablab inventory.
+
+&lt;p&gt;Made by Zaerc.</description>
 <gates>
-<gate name="G$1" symbol="JACK" x="0" y="0"/>
+<gate name="G$1" symbol="DC-POWER-JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="2.1MM" package="JACK_2.1MM">
+<device name="" package="PJ-002AH-SMT">
 <connects>
 <connect gate="G$1" pin="CONTACT" pad="CONTACT"/>
-<connect gate="G$1" pin="PIN" pad="PIN"/>
+<connect gate="G$1" pin="PIN1" pad="PIN1"/>
+<connect gate="G$1" pin="PIN2" pad="PIN2"/>
 <connect gate="G$1" pin="SHUNT" pad="SHUNT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name=".65MM" package="JACK_.65MM">
-<connects>
-<connect gate="G$1" pin="CONTACT" pad="SHUNT"/>
-<connect gate="G$1" pin="PIN" pad="PIN"/>
-<connect gate="G$1" pin="SHUNT" pad="CONTACT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -712,13 +711,14 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <part name="U$4" library="fab" deviceset="PINHD-2X2-SMD" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="J1" library="fab" deviceset="JACK" device="2.1MM"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="J2" library="fab" deviceset="JACK-2.1MM" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="86.36" y="68.58" size="1.778" layer="91">ISP</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="68.58" y="45.72"/>
@@ -742,9 +742,9 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <instance part="U$4" gate="G$1" x="91.44" y="17.78"/>
 <instance part="GND6" gate="1" x="76.2" y="12.7"/>
 <instance part="P+6" gate="VCC" x="104.14" y="25.4"/>
-<instance part="J1" gate="G$1" x="27.94" y="71.12" rot="R90"/>
-<instance part="GND7" gate="1" x="45.72" y="76.2" rot="R90"/>
+<instance part="GND7" gate="1" x="45.72" y="78.74" rot="R90"/>
 <instance part="P+7" gate="VCC" x="25.4" y="58.42" rot="R180"/>
+<instance part="J2" gate="G$1" x="27.94" y="73.66" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -783,9 +783,12 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <wire x1="104.14" y1="20.32" x2="93.98" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="PIN"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="68.58" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="CONTACT"/>
+<pinref part="J2" gate="G$1" pin="SHUNT"/>
+<wire x1="30.48" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<junction x="25.4" y="68.58"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -827,12 +830,13 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <junction x="86.36" y="17.78"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="SHUNT"/>
-<pinref part="J1" gate="G$1" pin="CONTACT"/>
-<wire x1="25.4" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-<junction x="30.48" y="76.2"/>
+<wire x1="43.18" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<junction x="30.48" y="78.74"/>
+<pinref part="J2" gate="G$1" pin="PIN1"/>
+<pinref part="J2" gate="G$1" pin="PIN2"/>
+<junction x="25.4" y="78.74"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
