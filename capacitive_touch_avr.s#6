@@ -714,6 +714,7 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="J2" library="fab" deviceset="JACK-2.1MM" device=""/>
+<part name="ESD-C3" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -742,9 +743,10 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <instance part="U$4" gate="G$1" x="91.44" y="17.78"/>
 <instance part="GND6" gate="1" x="76.2" y="12.7"/>
 <instance part="P+6" gate="VCC" x="104.14" y="25.4"/>
-<instance part="GND7" gate="1" x="45.72" y="76.2" rot="R90"/>
+<instance part="GND7" gate="1" x="45.72" y="78.74" rot="R90"/>
 <instance part="P+7" gate="VCC" x="25.4" y="58.42" rot="R180"/>
-<instance part="J2" gate="G$1" x="27.94" y="71.12" rot="R270"/>
+<instance part="J2" gate="G$1" x="27.94" y="73.66" rot="R90"/>
+<instance part="ESD-C3" gate="&gt;NAME" x="53.34" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -784,11 +786,11 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 </segment>
 <segment>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="CONTACT"/>
-<pinref part="J2" gate="G$1" pin="SHUNT"/>
-<wire x1="30.48" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
-<junction x="25.4" y="66.04"/>
+<pinref part="J2" gate="G$1" pin="PIN1"/>
+<wire x1="25.4" y1="68.58" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="PIN2"/>
+<wire x1="30.48" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<junction x="25.4" y="68.58"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -830,13 +832,12 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <junction x="86.36" y="17.78"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="43.18" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-<junction x="30.48" y="76.2"/>
-<pinref part="J2" gate="G$1" pin="PIN1"/>
-<pinref part="J2" gate="G$1" pin="PIN2"/>
-<junction x="25.4" y="76.2"/>
+<pinref part="J2" gate="G$1" pin="CONTACT"/>
+<wire x1="43.18" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="SHUNT"/>
+<wire x1="25.4" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
+<junction x="30.48" y="78.74"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
