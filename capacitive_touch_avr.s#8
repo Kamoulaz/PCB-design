@@ -714,6 +714,7 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="J2" library="fab" deviceset="JACK-2.1MM" device=""/>
+<part name="ESD-C3" library="fab" deviceset="CAP-UNPOLARIZED" device="FAB" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -745,6 +746,7 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <instance part="GND7" gate="1" x="45.72" y="78.74" rot="R90"/>
 <instance part="P+7" gate="VCC" x="25.4" y="58.42" rot="R180"/>
 <instance part="J2" gate="G$1" x="27.94" y="73.66" rot="R90"/>
+<instance part="ESD-C3" gate="&gt;NAME" x="53.34" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
